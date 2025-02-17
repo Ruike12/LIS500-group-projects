@@ -1,0 +1,40 @@
+nav {
+    background-color: #86ac25;
+    padding: 10px;
+    text-align:center;
+}
+nav ul {
+    margin: 1ex;
+    padding: 2ex;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: rgb(15, 10, 10);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.introduction {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;  
+    background-color: #f8f8f8; 
+}
+
+.introduction2 {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
