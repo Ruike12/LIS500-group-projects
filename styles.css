@@ -1,3 +1,4 @@
+/* Navigation bar styles */
 nav {
     background-color: #86ac25;
     padding: 10px;
@@ -19,6 +20,7 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Introduction text styles */
 .introduction {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -26,12 +28,14 @@ nav ul li a {
     background-color: #f8f8f8; 
 }
 
+/* Container for introduction section */
 .introduction2 {
     max-width: 800px;
     margin: auto;
     padding: 20px;
 }
 
+/* Centered image */
 .centered-image {
     display: block;
     margin-left: auto;
