@@ -1,8 +1,8 @@
 /* Navigation bar styles */
 nav {
-    background-color: #86ac25;
+    background-color: #ffcc99;  /* Warm peachy orange */
     padding: 10px;
-    text-align:center;
+    text-align: center;
 }
 nav ul {
     margin: 1ex;
@@ -14,31 +14,112 @@ nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
-    color: rgb(15, 10, 10);
+    color: #663300;  /* Darker brown for contrast */
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
 
-/* Introduction text styles */
-.introduction {
+/* Global background for all pages */
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;  
-    background-color: #f8f8f8; 
+    background-color: #ffff99;  /* Soft yellow (Same as Home Page) */
 }
 
-/* Container for introduction section */
-.introduction2 {
-    max-width: 800px;
-    margin: auto;
+/* Main container */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffcc99;  /* Soft orange */
+    border-radius: 8px;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    background-color: #ffff99; /* Same as Home Page */
     padding: 20px;
 }
 
-/* Centered image */
-.centered-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Unified heading style */
+h1, h2 {
+    font-size: 1.6em;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 15px;
+    color: #663300; /* Darker brown */
+}
+
+/* Sections styling */
+section {
+    background-color: #ffcc99; /* Matching Home Page */
+    border-left: 6px solid #cc9966;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Styled links */
+a {
+    color: #996633; /* Earthy brown */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tech Hero & Resource Sections */
+.tech-hero, .resources-section {
+    background-color: #ffff99; /* Soft yellow */
+    border-left: 6px solid #ffcc99;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Video and Article sections */
+.video-container, .article-container {
+    background-color: #ffcc99;
+    border-left: 6px solid #ffcc99;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Image container */
+.image-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Add rounded corners and shadow to images */
+.image-container img {
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid #ffcc99;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Button Styling */
+button {
+    background-color: #996633; /* Soft green */
+    color: rgb(25, 23, 23);
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #669966; /* Darker green for hover effect */
 }

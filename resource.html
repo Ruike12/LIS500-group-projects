@@ -4,92 +4,178 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet"/>
-        <title>LIS 500:Project #2 Ruike and Yunning</title>
+        <title>LIS 500: Project #2 Ruike and Yunning</title>
     </head>
     <body class="introduction">
-            <!-- Navigation Bar: Contains links to main pages of the website -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="resource.html">Resources</a></li>
-            <li><a href="tech hero.html">Tech Hero</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Resources on Implicit Bias, Intersectionality & Equity</h1>
-    </header>
+        <!-- Navigation Bar -->
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="tech hero.html">Tech Hero</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <main class="introduction2">
-         <!-- Introduction Section -->
-         <section>
-            <h2>Introduction to These Topics</h2>
-            <p>These resources provide an introduction to key concepts such as:</p>
-            <ul>
-                <li><strong>Implicit Bias Test (IBT)</strong> </li>
-                <li><strong>Intersectionality</strong> </li>
-                <li><strong>Implicit Bias</strong> </li>
-            </ul>
-        </section>
+        <header>
+            <h1>Resources on Implicit Bias, Intersectionality & Equity</h1>
+        </header>
 
-        <!-- Resource 1: Take the Implicit Bias Test -->
-        <section>
-            <h2>Implicit Bias Test (IBT)</h2>
+        <main class="introduction2">
+        <!-- Introduction Section -->
+            <section>
+                <h2>Introduction to These Topics</h2>
+                <p>These resources provide an introduction to key concepts such as:</p>
+                <ul>
+                    <li><strong>Implicit Bias Test (IBT)</strong></li>
+                    <li><strong>Intersectionality</strong></li>
+                    <li><strong>Implicit Bias</strong></li>
+                </ul>
+            </section>
+
+            <!-- Resource 1: Take the Implicit Bias Test -->
+            <section>
+                <h2>Implicit Bias Test (IBT)</h2>
+
+                <button type="button" onclick="displayInfo()">Click to learn about IBT</button>
+
+                <div id="info-container">
+                    <span id="info"></span>
+                </div>
+
+                <script>
+                    function displayInfo() {
+                        document.getElementById("info").innerHTML = `
+                            The Harvard Implicit Association Test (IAT) is a widely used tool for uncovering unconscious biases related to race, gender, age, and more. 
+                            Understanding these biases can help us become more aware of our assumptions and their impact. 
+                            <a href='https://www.americanbar.org/groups/litigation/about/diversity/task-force-implicit-bias/implicit-bias-test/' target='_blank'>information about implicit bias test</a>`;
+                    }
+                </script>
+                <h3>Our IBT Experiences</h3>
+                <p> During our group discussion about the Harvard Implicit Association Test (IAT), we reflected on our individual experiences and the insights gained from the readings. Ruike shared that the test required quick reading and response, making it clear how deeply ingrained unconscious biases can be. This led to a discussion on how biases operate beyond our awareness, influencing how we process information and make decisions.
+
+                    Yunning found the experience thought-provoking but questioned whether the test accurately captures real-world biases. She referenced an article from our readings that critiques the IAT’s reliability, suggesting that implicit biases may not always translate into actual discriminatory behavior. This sparked a debate in our group—some of us felt the test was a useful tool for self-awareness, while others were skeptical of its predictive power.
+                    
+                    We also discussed how our cultural backgrounds might influence our test results. One group member pointed out that growing up in different environments shapes how we associate words and images, which could affect the IAT’s findings. This connected to our reading on intersectionality, which highlights how multiple social identities shape our experiences with bias.
+                    
+                    Overall, our discussion helped us recognize that while the IAT raises awareness of unconscious biases, it should be interpreted cautiously. Our readings provided valuable context on both the strengths and limitations of implicit bias testing, making us more critical of how we understand and address bias in daily life.
+                    
+                </p>
+            </section>
+
+            <!-- Resource 2: Video on Intersectionality -->
+            <section>
+                <h2>Understanding Intersectionality</h2>
+                <p>During our group discussion on intersectionality, we explored how multiple social identities—such as race, gender, and class—intersect to shape experiences of oppression or privilege. We started by reflecting on our own backgrounds and how they influence our perspectives.</p>
+                <p>Ruike shared that growing up as an international student, they often felt that racial identity played a significant role in their interactions, but socioeconomic class and nationality also contributed to the way they were perceived. For example, while international students might face racial bias, those from wealthier backgrounds might experience less financial burden, which alters their overall privilege.
+                </p>
+                <p>Yunning added that gender plays a key role in workplace dynamics. She referenced a reading that highlighted how women of color often experience both racial and gender-based discrimination, making their challenges distinct from those faced by either white women or men of color. We examined readings that discussed intersectionality, including Kimberlé Crenshaw’s work, which originally introduced the term.  A key takeaway from our discussion was that systems of oppression are not isolated—they overlap and reinforce each other.  We debated whether intersectionality is always negative (as in discrimination) or if it can also create unique forms of resilience and solidarity among marginalized groups.
+                </p>
+                <p>One reading suggested that workplace policies often fail to consider intersectionality, meaning diversity initiatives may help women broadly but overlook the specific challenges faced by women of color, LGBTQ+ individuals, or disabled women.  This made us question how institutions can adopt more intersectional policies instead of using a "one-size-fits-all" diversity approach.</p>
+                <p><strong>Watch this short video:</strong> Learn about the Harvard Implicit Association Test (IAT) and how it helps uncover unconscious biases.</p>
+                <button onclick="loadIATVideo()">Click to Load Intersectionality Video</button>
     
-            <button type="button" onclick="displayInfo()">
-                Click to learn about the Harvard IAT
-            </button>
+                <div id="video-container">
+                    <span></span>
+                </div>
+    
+                <script>
+                    function loadIATVideo() {
+                        document.getElementById("video-container").innerHTML = `
+                            <span>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/O1islM0ytkE" 
+                                title="Understanding the Implicit Association Test (IAT)" frameborder="0" allowfullscreen></iframe>
+                            </span>`;
+                    }
+                </script>
+            </section>
+
+
+
+            <!-- Resource 3: Article on Implicit Bias in Hiring -->
+            <section>
+                <h2>Implicit Bias in Hiring and the Workplace</h2>
+                <p>Many companies claim to support diversity, but implicit biases in hiring, promotion, and workplace culture create invisible barriers for marginalized groups.
+                    As international students, we may feel this implicit bias more than local job seekers. While many companies profess to support diversity when hiring, unconscious bias can still influence employers' decisions, for example in screening resumes, interview communications, and career development opportunities. Factors such as language ability, cultural background and visa restrictions can also be hidden barriers to hiring and promotion. In addition, workplace culture may default to the habits of mainstream groups, making international students feel challenged in socializing, teamwork, and career development. Therefore, we as international students need to not only demonstrate our professional competence when applying for jobs, but also learn to identify and deal with potential implicit biases.</p>         
+ 
+                    <p><strong>Read:</strong> Click the button below to access a report on tackling bias in hiring.</p>
+                    <button onclick="loadHiringBiasReport()">Click to Load Report</button>
         
-            <p id="info"></p>
+                    <div id="hiring-bias-link">
+                        <span></span>
+                    </div>
         
-            <script>
-                function displayInfo() {
-                    document.getElementById("info").innerHTML = 
-                        "The Harvard Implicit Association Test (IAT) is a widely used tool for uncovering unconscious biases related to race, gender, age, and more. " +
-                        "Understanding these biases can help us become more aware of our assumptions and their impact. " +
-                        "<a href='https://implicit.harvard.edu/implicit/takeatest.html' target='_blank'>Take the Test</a>";
-                }
-            </script>
-
-            <h3>Our IBT Experiences</h3>
-            <p> Regarding the Harvard Implicit Association Test (IAT), we’ve taken the adult version, with the first section focusing on race. During the test, Ruike had to read and understand sentences quickly and respond accordingly. This experience made Ruike realize how unconscious biases can exist within us without our awareness. Tests like this have made me realize that many times, we may not know much about our inner thoughts or biases. Yunning found the experience really interesting. While Yunning won’t share her specific results, Yunning think the test made her reflect on how unconscious biases can influence the way we think, make decisions, and interact with others.
-            </p>
-        </section>
-
-
-        <!-- Resource 2: Video on Intersectionality -->
-        <section>
-            <h2>Understanding Intersectionality</h2>
-            <p>Intersectionality describes how overlapping social identities, like race, gender, and class, impact experiences of oppression or privilege.</p>
-            <p><strong>Watch this short video:</strong> Kimberlé Crenshaw, who coined the term "Intersectionality," explains its importance in social justice.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/O1islM0ytkE" title="Kimberlé Crenshaw: What is Intersectionality?" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <!-- Resource 3: Article on Implicit Bias in Hiring -->
-        <section>
-            <h2>Implicit Bias in Hiring and the Workplace</h2>
-            <p>Many companies claim to support diversity, but implicit biases in hiring, promotion, and workplace culture create invisible barriers for marginalized groups.
-                As international students, we may feel this implicit bias more than local job seekers. While many companies profess to support diversity when hiring, unconscious bias can still influence employers' decisions, for example in screening resumes, interview communications, and career development opportunities. Factors such as language ability, cultural background and visa restrictions can also be hidden barriers to hiring and promotion. In addition, workplace culture may default to the habits of mainstream groups, making international students feel challenged in socializing, teamwork, and career development. Therefore, we as international students need to not only demonstrate our professional competence when applying for jobs, but also learn to identify and deal with potential implicit biases.</p>
-            <p><strong>Read:</strong> <a href="https://www.ckju.net/en/dossier/implicit-bias-how-identify-and-minimize-bias-hiring-process" target="_blank">Tackling Bias in Hiring – McKinsey Report</a></p>
+                    <script>
+                        function loadHiringBiasReport() {
+                            document.getElementById("hiring-bias-link").innerHTML = `
+                                <span>
+                                    <p><strong>Read:</strong> 
+                                        <a href="https://www.ckju.net/en/dossier/implicit-bias-how-identify-and-minimize-bias-hiring-process" 
+                                        target="_blank">Tackling Bias in Hiring – McKinsey Report</a>
+                                    </p>
+                                </span>`;
+                        }
+                    </script>           
             
-        </section>
+            </section>
 
-        <!-- Resource 4: Interactive Activity on Bias in AI -->
-        <section>
-            <h2>The Role of AI in Bias</h2>
-            <p>Artificial Intelligence is often seen as neutral, but AI systems inherit human biases because they are trained on existing data.
-                These biases can manifest in various ways, such as skewed hiring algorithms, facial recognition inaccuracies, and disparities in healthcare diagnostics.
-                For example, AI-driven hiring tools have been found to favor certain demographics over others, reinforcing systemic inequalities.
-                Similarly, facial recognition technology has been shown to misidentify individuals with darker skin tones at higher rates, leading to concerns about discrimination in law enforcement and security applications.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UG_X_7g63rY" title="Bias in AI Explained" frameborder="0" allowfullscreen></iframe>
-        </section>
 
-        <!-- Additional Resources -->
-        <section>
-            <h2>Further Reading</h2>
-            <a href="https://plato.stanford.edu/entries/implicit-bias/" target="_blank">Stanford Encyclopedia of Philosophy - Implicit Bias</a>
-        </section>
+            <!-- Resource 4: Interactive Activity on Bias in AI -->
+            <section>
+                <h2>The Role of AI in Bias</h2>
+                <p>Artificial Intelligence is often seen as neutral, but AI systems inherit human biases because they are trained on existing data.
+                    These biases can manifest in various ways, such as skewed hiring algorithms, facial recognition inaccuracies, and disparities in healthcare diagnostics.
+                    For example, AI-driven hiring tools have been found to favor certain demographics over others, reinforcing systemic inequalities.
+                    Similarly, facial recognition technology has been shown to misidentify individuals with darker skin tones at higher rates, leading to concerns about discrimination in law enforcement and security applications.</p>
+                    <p><strong>Watch this short video:</strong></p>
+                    <button onclick="loadAIBiasVideo()">Click to Load Bias in AI Video</button>
+        
+                    <div id="ai-video-container">
+                        <span></span>
+                    </div>
+        
+                    <script>
+                        function loadAIBiasVideo() {
+                            document.getElementById("ai-video-container").innerHTML = `
+                                <span>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UG_X_7g63rY" 
+                                    title="Bias in AI Explained" frameborder="0" allowfullscreen></iframe>
+                                </span>`;
+                        }
+                    </script>          
+           
+           
+           
+                </section>
 
-    </main>
-</body>
+
+
+            <!-- Additional Resources -->
+            <section>
+                <h2>Further Reading</h2>
+
+                <p><strong>Further Reading:</strong> Click the button below to access an in-depth article on implicit bias.</p>
+                <button onclick="loadImplicitBiasLink()">Click to Load Article</button>
+    
+                <div id="implicit-bias-link">
+                    <span></span>
+                </div>
+    
+                <script>
+                    function loadImplicitBiasLink() {
+                        document.getElementById("implicit-bias-link").innerHTML = `
+                            <span>
+                                <a href="https://plato.stanford.edu/entries/implicit-bias/" target="_blank">
+                                    Stanford Encyclopedia of Philosophy - Implicit Bias
+                                </a>
+                            </span>`;
+                    }
+                </script>
+            </section>
+
+
+        </main>
+    </body>
 </html>
